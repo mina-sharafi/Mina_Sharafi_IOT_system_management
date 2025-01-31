@@ -915,6 +915,8 @@ class AdminPanel:
     def add_device_to_group(self,group_name,device):
         if group_name in self.groups:
             self.groups[group_name].append(device)
+            #task2
+            print(f'Dvice "{device}" added to group "{group_name}" .')
             
            
         else:
