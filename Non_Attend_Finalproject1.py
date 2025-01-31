@@ -932,7 +932,8 @@ class AdminPanel:
             topic=f'home/{group_name}/{device_type}/{name}'
             new_device=Device(topic)
             self.add_device_to_group(group_name, new_device)
-            
+            #task2
+            print(f'Device "{name}" created and added to group "{group_name}".')
             
         else:
             print(f'Group {group_name} does not exist')
@@ -949,7 +950,8 @@ class AdminPanel:
                 new_device=Device(topic)
                 
                 self.add_device_to_group(group_name, new_device)
-            
+            #task_2
+            print(f'{number_of_devices} added to group "{group_name}".')
             
         else:
             print(f'Group {group_name} does not exist')
@@ -982,8 +984,10 @@ class AdminPanel:
         pass
         
     def trun_on_all(self):
-        '''hameye device haro roshan kone'''
-        pass
+        #task_2
+        for group_name in self.groups:
+            self.turn_on_all_in_group(group_name)
+        print("Turning ON all devices in all groups")
         
     def turn_off_all(self):
         '''hameye devcie haro khamosh kone'''
