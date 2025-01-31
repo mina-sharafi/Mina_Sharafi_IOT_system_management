@@ -995,8 +995,11 @@ class AdminPanel:
         print("Turning ON all devices in all groups")
         
     def turn_off_all(self):
+        for group_name in self.groups:
+            self.turn_off_all_in_group(group_name)
+        print("Turning OFF all devices in all groups")
         '''hameye devcie haro khamosh kone'''
-        pass
+        
         
     def get_status_in_group(self,group_name):
         
@@ -1032,7 +1035,7 @@ a1.create_group('living_room')
 a1.create_multiple_devices('living_room','lamps',40)
 
 a1.turn_on_all_in_group('living_room')
-
+a1.turn_off_all_in_group('living_room')
 #check koni bbini roshan 
 
 mygroups=a1.groups['living_room']
