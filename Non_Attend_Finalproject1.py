@@ -1001,10 +1001,13 @@ class AdminPanel:
         '''hameye devcie haro khamosh kone'''
         
         
-    def get_status_in_group(self,group_name):
-        
+     def get_status_in_group(self,group_name):
+        #task_2
+        if group_name in self.groups:
+            for device in self.groups[group_name]:
+                print(f' status of devices in group "{group_name}" : {device.topic}: {device.status}')
         '''living_room y matn print mikone mige lamp1 on , klamp2 off , lamp3 ,..'''
-        pass
+         
     def get_status_in_device_type(self,device_type):
         
         ''' device=lamps --> tamame lamp haro status mohem nabashe tooye living rome kojas'''
