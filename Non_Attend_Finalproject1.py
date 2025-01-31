@@ -970,14 +970,18 @@ class AdminPanel:
         
         
 
-    def turn_on_all_in_group(self,group_name):
+     def turn_on_all_in_group(self,group_name):
         devices=self.devices_ingroups(group_name)
         for device in devices:
-            device.turn_one()
+            device.turn_on()
             
             
             
     def turn_off_all_in_group(self,group_name):
+        #task_2
+        devices=self.devices_ingroups(group_name)
+        for device in devices:
+            device.turn_off()
         
         ''' hameye cheragh haye yek goroh ra khamosh konad'''
         
