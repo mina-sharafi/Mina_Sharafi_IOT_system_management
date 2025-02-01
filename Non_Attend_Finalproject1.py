@@ -986,7 +986,6 @@ class AdminPanel:
         
         ''' hameye cheragh haye yek goroh ra khamosh konad'''
         
-        pass
         
     def trun_on_all(self):
         #task_2
