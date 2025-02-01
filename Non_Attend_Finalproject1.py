@@ -970,8 +970,7 @@ class AdminPanel:
             return []
         
         
-
-          def turn_on_all_in_group(self,group_name):
+    def turn_on_all_in_group(self,group_name):
         devices=self.get_devices_in_groups(group_name)
         for device in devices:
             device.turn_on()
@@ -1001,7 +1000,7 @@ class AdminPanel:
         '''hameye devcie haro khamosh kone'''
         
         
-     def get_status_in_group(self,group_name):
+    def get_status_in_group(self,group_name):
         #task_2
         if group_name in self.groups:
             for device in self.groups[group_name]:
