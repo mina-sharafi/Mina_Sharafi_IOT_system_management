@@ -896,7 +896,8 @@ mygroups[1].turn_on()
 
 
 #==========================================================
-
+#task_3
+from datetime import datetime
 class AdminPanel:
 
     def __init__(self):
@@ -1025,6 +1026,13 @@ class AdminPanel:
         
         '''
         pass
+
+#task_3
+    def auto_control_lights(self):
+        current_hour =datatime.now().hour
+
+        
+        
         
 
         
