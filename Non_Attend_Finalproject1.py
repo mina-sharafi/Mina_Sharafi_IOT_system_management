@@ -975,7 +975,7 @@ class AdminPanel:
         devices=self.get_devices_in_groups(group_name)
         for device in devices:
             device.turn_on()
-        print(f'Turnini on all device in {group_name}.')    
+        print(f'Turn in on all device in {group_name}.')    
             
             
     def turn_off_all_in_group(self,group_name):
@@ -983,7 +983,7 @@ class AdminPanel:
         devices=self.get_devices_in_groups(group_name)
         for device in devices:
             device.turn_off()
-        print(f'Turnini off all device in {group_name}.')
+        print(f'Turn in off all device in {group_name}.')
         
         ''' hameye cheragh haye yek goroh ra khamosh konad'''
         
