@@ -629,21 +629,21 @@ class Device:
         print(f'command {command} send to topic {self.topic}')
 
 
-a1 = Device('home/living_room/lamps/lamp45')
+#a1 = Device('home/living_room/lamps/lamp45')
 
-a1.name
+#a1.name
 
-a1.group
+#a1.group
 
-a1.turn_on()
+#a1.turn_on()
 
-a1.get_status()
+#a1.get_status()
 
-a1.turn_off()
+#a1.turn_off()
 
-a1.get_status()
+#a1.get_status()
 
-a1 = Device('home/living_room/lamps/lamps1')
+'''a1 = Device('home/living_room/lamps/lamps1')
 a2 = Device('home/living_room/lamps/rew')
 a3 = Device('home/living_room/lamps/lamtsrsp45')
 a4 = Device('home/living_room/lamps/lamp45')
@@ -654,7 +654,7 @@ a1 = Device('home/living_room/lamps/lamp45')
 a1 = Device('home/living_room/lamps/lamp45')
 a1 = Device('home/living_room/lamps/lamp45')
 a1 = Device('home/living_room/lamps/lamp45')
-a1 = Device('home/living_room/lamps/lamp45')
+a1 = Device('home/living_room/lamps/lamp45')'''
 
 
 # ========================================
@@ -791,7 +791,7 @@ class AdminPanel:
             print(f'Group {group_name} does not exist')
 
 
-a1 = AdminPanel()
+'''a1 = AdminPanel()
 
 a1.create_group('living_room')
 
@@ -801,7 +801,7 @@ mygroups = a1.groups['living_room']
 
 mygroups[1].name  # lamps2'
 
-mygroups[1].turn_on()
+mygroups[1].turn_on()'''
 
 # ==========================================================
 # task_3
@@ -826,8 +826,7 @@ class AdminPanel:
     def add_device_to_group(self, group_name, device):
         if group_name in self.groups:
             self.groups[group_name].append(device)
-            # task2
-            print(f'Dvice "{device}" added to group "{group_name}" .')
+
 
 
         else:
@@ -936,13 +935,13 @@ if __name__ == '__main__':
     a1 = AdminPanel()
 
     a1.create_group('living_room')
-    a1.create_multiple_devices('living_room', 'lamps', 40)
+    a1.create_multiple_devices('living_room', 'lamps', 5)
 
     a1.turn_on_all_in_group('living_room')
-    a1.turn_off_all_in_group('living_room')
+    #a1.turn_off_all_in_group('living_room')
     # check koni bbini roshan
 
-    mygroups = a1.groups['living_room']
+    #mygroups = a1.groups['living_room']
 
     # mygroups[1].name #lamps2'
 
