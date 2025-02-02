@@ -927,9 +927,14 @@ class AdminPanel:
         pass
 
     # task_3
-    def auto_control_lights(self):
+        def auto_control_lights(self):
         current_hour = datetime.now().hour
-
+        if 7 <= current_hour <= 18:
+            self.turn_off_all()
+            print("Turning OFF all devices (From 7 am to 6 pm, the lights are turned off for optimal use^_^) ")
+        else:
+            self.turn_on_all()
+            print('at night, lights are turned on')
 
 if __name__ == '__main__':
     a1 = AdminPanel()
@@ -938,6 +943,7 @@ if __name__ == '__main__':
     a1.create_multiple_devices('living_room', 'lamps', 5)
 
     a1.turn_on_all_in_group('living_room')
+    a1.auto_control_lights()
     #a1.turn_off_all_in_group('living_room')
     # check koni bbini roshan
 
