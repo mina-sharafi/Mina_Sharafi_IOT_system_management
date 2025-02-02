@@ -1008,9 +1008,14 @@ class AdminPanel:
         '''living_room y matn print mikone mige lamp1 on , klamp2 off , lamp3 ,..'''
          
     def get_status_in_device_type(self,device_type):
-        
+        for group_name, devices in self.groups.items():
+            for device in devices:
+                if device.device_type == device_type:
+                    print(f'{device.name}: {device.status}')
+                else:
+                    print(f'No devices of type {device_type} found.')
         ''' device=lamps --> tamame lamp haro status mohem nabashe tooye living rome kojas'''
-        pass
+        
     def create_sensor(self) :
     #bar asase clASS SENSOR argument bzarid
         pass
@@ -1028,7 +1033,8 @@ class AdminPanel:
 
 #task_3
     def auto_control_lights(self):
-        current_hour =datatime.now().hour
+        current_hour = datetime.now().hour
+
 
         
         
