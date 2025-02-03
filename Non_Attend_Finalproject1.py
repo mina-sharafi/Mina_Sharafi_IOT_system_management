@@ -928,6 +928,9 @@ class AdminPanel:
 
     # task_3
     def auto_control_lights(self):
+        #baraye tosee ayandeh mishe fasl ra ham be in ezafeh kard ke dar nime aval sal dirtar roshan shavad
+        #va dar nime dovom sal be khater zoodtar tarik shodan hava lamp ha zodtar roshan shavad
+        #mishavad ba tavajoh be mogheyat goghrafiyayi noor ra control kard
         current_hour = datetime.now().hour
         for group_name in self.groups:
             for device in self.groups[group_name]:
