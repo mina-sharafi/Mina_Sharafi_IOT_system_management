@@ -56,6 +56,9 @@ class Device:
         elif self.device_type=='fans':
             GPIO.output(22, GPIO.HIGH)
             
+        elif self.device_type=='camera':
+            GPIO.output(22, GPIO.HIGH)
+        
             
     def set_speed(self,speed):
         
@@ -82,6 +85,8 @@ class Device:
         elif self.device_type=='fans':
             GPIO.output(22, GPIO.LOW)
 
+    def turn_on_night_vision(self):
+        pass
 
         
     def get_status(self):
