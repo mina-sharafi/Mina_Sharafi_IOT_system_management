@@ -40,7 +40,7 @@ class Device:
                 #self.pwm = GPIO.PWM(18, 100)  # PWM frequency 100Hz
                 #self.pwm.start(0)
         #task_1        
-        elif self.device_type == '':
+        elif self.device_type == 'camera':
             GPIO.setup(10,GPIO.OUT)                            
             
 
