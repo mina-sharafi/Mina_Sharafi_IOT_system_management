@@ -2,6 +2,8 @@
 import RPi.GPIO as GPIO
 import Adafruit_DHT
 import paho.mqtt.client as mqtt
+import time
+
 class Device:
     def __init__(self,topic,mqtt_broker='localhost',port=1883):
 
@@ -15,7 +17,8 @@ class Device:
         self.mqtt_broker=mqtt_broker 
         self.status='off'
         self.speed=0
-        
+        #Task_1
+        self.mode = 'night' #ba tavajo be tariki hava in mored taghir mikonad
 
 
         self.connect_mqtt()
@@ -57,7 +60,7 @@ class Device:
             GPIO.output(22, GPIO.HIGH)
             
         elif self.device_type=='camera':
-            GPIO.output(22, GPIO.HIGH)
+            GPIO.output(10, GPIO.HIGH)
         
             
     def set_speed(self,speed):
@@ -86,8 +89,12 @@ class Device:
             GPIO.output(22, GPIO.LOW)
 
     def turn_on_night_vision(self):
-        pass
+        if self.mode == 'night':
+            GPIO.output(10, GPIO.NIGHT_MODE)
 
+    def turn_off_night_vision(self):
+        #zamani ke rouz shod halat did dar shab camera khamoush mishavad
+        pass
         
     def get_status(self):
         return self.status
