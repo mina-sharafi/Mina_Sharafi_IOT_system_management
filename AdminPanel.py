@@ -108,11 +108,21 @@ class AdminPanel:
                     print(f'No devices of type {device_type} found.')
         ''' device=lamps --> tamame lamp haro status mohem nabashe tooye living rome kojas'''
 
-    def create_sensor(self):
+    def create_sensor(self,group_name, sensor_type, name, pin):
         # bar asase clASS SENSOR argument bzarid
-        pass
+        if group_name in self.groups:
+            topic = f'home/{group_name}/{sensor_type}/{name}'
+            new_sensor = Sensor(topic, sensor_type, pin)
+            self.groups[group_name].append(new_sensor)
+            print('')
+        else:
+            print('not found')
 
     def get_status_sensor_in_group(self, group_name):
+        if group_name in self.groups:
+            print(f'vaziat sensorhaye "{group_name}":')
+            for device in self.groups[group_name]:
+                    print(f' {device.topic} status: {device.read_value()}')
 
         '''
 
