@@ -1,3 +1,12 @@
+
+'''
+APM: ahsant
+
+
+
+
+'''
+
 import time
 import random
 
@@ -20,7 +29,7 @@ class Sensor:
             return self.curren_value
 
         elif self.device_type == 'light':
-
+#APM : Ahsant
             a = np.random.uniform(0, 100)
             self.curren_value = a
             return self.curren_value
