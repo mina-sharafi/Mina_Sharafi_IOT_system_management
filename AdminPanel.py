@@ -1,3 +1,12 @@
+
+'''
+APM:
+besoorate kolli mian migan esme script ro fargh bedid ba tabe haye toosh
+masalan bejaye Device mitonid benevisid (device) ya masalan pydevice va ... -->(herfe ee tare)
+
+dakhele codetoon comment gozashtam ba setare ke peyda konid ***
+
+'''
 from Device import Device
 from Device import Sensor
 from datetime import datetime
@@ -86,6 +95,9 @@ class AdminPanel:
             self.turn_on_all_in_group(group_name)
         print("Turning ON all devices in all groups")
 
+    
+    #***************APM
+    #ahsant , hala say konid bedone estefade az tabe haye dakheli in kar ro bokonid (tamrin khod amooz) 
     def turn_off_all(self):
         for group_name in self.groups:
             self.turn_off_all_in_group(group_name)
@@ -131,6 +143,10 @@ class AdminPanel:
         '''
         pass
 # task_3
+    #************APM
+    #in tabe ro be goone ee benevisid ke vorodi group name ro begire
+    #yani dare donyaye vaghe ei --> ma miaym fght migim hal (living room) ya yeja ro fght automat mikonim na tamame khoone ro
+    #ahsant
     def auto_control_lights(self):
         #baraye tosee ayandeh mishe fasl ra ham be in ezafeh kard ke dar nime aval sal dirtar roshan shavad
         #va dar nime dovom sal be khater zoodtar tarik shodan hava lamp ha zodtar roshan shavad
