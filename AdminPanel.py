@@ -130,6 +130,9 @@ class AdminPanel:
         else:
             print('not found')
 
+    #inja bayad tashkhis bede ke tooye group_name sensore ya na ?
+    #ag sensor bood read_value() bezane vagarne
+    #in age yek devcie bashe device.read_value behet errorr mide mige this devcie does'nt have attribute names read_value
     def get_status_sensor_in_group(self, group_name):
         if group_name in self.groups:
             print(f'vaziat sensorhaye "{group_name}":')
