@@ -95,6 +95,14 @@ class AdminPanel:
             self.turn_on_all_in_group(group_name)
         print("Turning ON all devices in all groups")
 
+    '''def turn_on_all(self):
+        for group_name in self.groups:
+            for device in self.groups[group_name]:
+                device.turn_on()
+        print("Turning ON all devices in all groups")'''
+    #be jaye turn_on_all ... az tabe turn_on faghat estefade mikone
+
+
     
     #***************APM
     #ahsant , hala say konid bedone estefade az tabe haye dakheli in kar ro bokonid (tamrin khod amooz) 
