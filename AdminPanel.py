@@ -146,7 +146,8 @@ class AdminPanel:
             print(f'vaziat sensorhaye "{group_name}":')
             for device in self.groups[group_name]:
                     print(f' {device.topic} status: {device.read_value()}')
-
+        elif:
+            print(f"this '{group_name}' not found.")
         '''
 
         sensor haye yek goroh ro biad doone dooen status ro pas bde
@@ -162,8 +163,11 @@ class AdminPanel:
         #baraye tosee ayandeh mishe fasl ra ham be in ezafeh kard ke dar nime aval sal dirtar roshan shavad
         #va dar nime dovom sal be khater zoodtar tarik shodan hava lamp ha zodtar roshan shavad
         #mishavad ba tavajoh be mogheyat goghrafiyayi noor ra control kard
+        if group_name not in self.groups:
+            print(f" this '{group_name}' not found!!!.")
+            return
         current_hour = datetime.now().hour
-        for group_name in self.groups:
+        #for group_name in self.groups:
             for device in self.groups[group_name]:
                 if device.device_type == 'lamps':
                     if 18 <= current_hour <= 22:
