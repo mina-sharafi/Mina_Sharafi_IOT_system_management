@@ -1,4 +1,4 @@
-# Mina_Sharafi_IOT_system_management
+# IOT_system_management
 Smart Home Automation System
 
 Introduction
