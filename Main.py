@@ -1,4 +1,4 @@
-from AdminPanel import AdminPanel
+from pyadminpanel import AdminPanel
 
 
 
