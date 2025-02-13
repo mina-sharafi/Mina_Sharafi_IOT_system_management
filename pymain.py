@@ -21,4 +21,3 @@ if __name__ == '__main__':
 
     # mygroups[1].turn_on()
 
-# besazi
