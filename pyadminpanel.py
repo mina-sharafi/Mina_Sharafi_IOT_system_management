@@ -3,7 +3,6 @@
 APM:
 besoorate kolli mian migan esme script ro fargh bedid ba tabe haye toosh
 masalan bejaye Device mitonid benevisid (device) ya masalan pydevice va ... -->(herfe ee tare)
-
 dakhele codetoon comment gozashtam ba setare ke peyda konid ***
 Done!!! TNX
 '''
