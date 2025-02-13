@@ -7,8 +7,8 @@ masalan bejaye Device mitonid benevisid (device) ya masalan pydevice va ... -->(
 dakhele codetoon comment gozashtam ba setare ke peyda konid ***
 
 '''
-from Device import Device
-from Device import Sensor
+from pydevice import Device
+from pydevice import Sensor
 from datetime import datetime
 
 
