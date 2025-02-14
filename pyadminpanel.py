@@ -100,9 +100,9 @@ class AdminPanel:
                 device.turn_on()
         print("Turning ON all devices in all groups")'''
     #be jaye turn_on_all ... az tabe turn_on faghat estefade mikone
-     ^
-     |
-     |
+    '' ^
+       |
+       |''
     #***************APM
     #ahsant , hala say konid bedone estefade az tabe haye dakheli in kar ro bokonid (tamrin khod amooz) 
     def turn_off_all(self):
